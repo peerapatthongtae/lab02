@@ -1,11 +1,12 @@
 body {
-    background-color: #f9f8f6;
+    background-color: #F8F8FF;
 }
 p {
     color : red;
     text-align : center;
     font-family: 'Prompt', sans-serif;
     font-size : 50px;
+    
 } 
 
 table, td, th,subject {
@@ -23,18 +24,23 @@ table {
 }
 
 th {
+    background-color : #CCFF00;
     height: 30px;
     color : black;
 }
 td {
-    height : 50px;
+    height : 20px;
 }
+
 #subject {
     background-color : #FFFF33;
     color :black;
     
 }
+
+
 .center {
+    margin-top : 5%;
     margin-left: 7%;
     width: 85%;
 }
