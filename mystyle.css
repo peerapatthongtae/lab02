@@ -1,14 +1,14 @@
 body {
-    
+    background-color: #f9f8f6;
 }
 p {
-   
-    text-align : center; 
-    color : red; 
-    
+    color : red;
+    text-align : center;
+    font-family: 'Prompt', sans-serif;
+    font-size : 50px;
 } 
 
-table, td, th {
+table, td, th,subject {
     
     text-align : center;
     border: 1px solid red;
@@ -17,7 +17,7 @@ table, td, th {
 table {
     border-collapse: collapse;
     background-color: #FFFFCC;
-    table-align : center;
+    align : center;
     width: 80%;
     
 }
@@ -28,4 +28,13 @@ th {
 }
 td {
     height : 50px;
+}
+#subject {
+    background-color : #FFFF33;
+    color :black;
+    
+}
+.center {
+    margin-left: 7%;
+    width: 85%;
 }
