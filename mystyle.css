@@ -1,5 +1,10 @@
+html, body { 
+   height: 100%;
+   
+}
+
 body {
-    background-color: #F8F8FF;
+    background-color: #E0FFFF;
 }
 h1 {
     font-family: 'Prompt', sans-serif; 
@@ -16,9 +21,18 @@ h2 {
     font-size : 20px;  
 }
 
-#colorblack {
+h3 {
+    font-family: 'Prompt', sans-serif; 
+    color : red;
+    
+    
+    font-size : 15px;  
+}
+
+h3.colorblack {
     color : black;
 }
+
 
 
 table, td, th,subject {
@@ -30,13 +44,13 @@ table, td, th,subject {
 table {
     border-collapse: collapse;
     background-color: #FFFFCC;
-    align : center;
-    width: 80%;
+    float : center;
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     
-}
-#fulltable {
-    width : 100%;
-    height : 10%;
 }
 
 th {
@@ -61,9 +75,7 @@ a :hover{
 
 
 .center {
-    margin-top : 5%;
-    margin-left: 7%;
-    width: 85%;
+    float : center;
 }
 
 
@@ -76,27 +88,45 @@ background-color: #ADD8E6;
 
 display:inline-block;
 }
-div {
-    margin-bottom: 20px;
+div{
+   margin-left : 10%;
+}
+img {
+    opacity : 0.8;
+    filter: alpha(opacity=80);
+}
+img.left{
+    margin-left : 5%;
+    float : left;
+}
+img.right{
+    margin-right : 5%;
+    float : right;
+}
+img:hover {
+    opacity : 1;
+    filter: alpha(opacity=100);
 }
 div.img {
+    opacity: 0.8;
     border: 1px solid #ccc;
 }
 
 div.img:hover {
-    border: 1px solid #777;
+    opacity: 1;
+    border: 1px solid black;
 }
 
 div.img img {
     width: 100%;
-    height: auto;
+    height: 270px;
 }
 
 div.desc {
     padding: 10px;
     
     font-family: 'Prompt', sans-serif; 
-    color : red;
+    color : #000080;
     text-align: center;
     
     font-size : 20px; 
@@ -107,28 +137,59 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
+    padding: 10px;
     float: left;
     width: 33%;
 }
 
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
 
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+
+
+ul {
+            list-style-type: none;
+            margin-left: 25%;
+            
+            
+            overflow: hidden;
+            background-color: #FFFFCC;
+            width : 50%;
+            float :center;
+        }
+        
+        li {
+            padding-left : 5%;
+            float: left;
+        }
+        
+        li a {
+            align-content: center;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        
+        
+        a:visited {
+            color: yellow
+        }
+        .wrapper {
+   display: block;
+   min-height: 100%; /* real browsers */
+   height: auto !important; /* real browsers */
+   height: 100%; /* IE6 bug */
+   margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+divfooter {
+    width : 100;
+}
+.footer {
+   height: 20px; /* ความสูงของ footer */
+   display: block;
+   text-align: center;
 }
 
 
